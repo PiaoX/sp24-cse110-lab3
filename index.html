@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title><b>Meeting Minutes: Project Meeting</b></title>
-        
-        <link rel="icon" type="image/png" href="clock.png">
-    </head>
-    <body>
-        <header>
-            <h1>Date:</h1>
-            <h1>Time:</h1>
-            <h1>Location:</h1>
-            <h1>Attendance:</h1>
-            <input type="checkbox"> <label>First Person</label>
-            <input type="checkbox"> <label>Second Person</label>
-            <h1><strong>Absent:</strong></h1>
-            <div class="main-container"> </div>
-            <span> </span>
-            <nav class="sections">
-                <ul>
-                    <li class="section"><a herf="#">Agenda</a></li>
-                    <li class="section"><a href="#">Old Business</a></li>
-                    <li class="section"><a href="#">New Business</a></li>
-                    <li class="section"><a href="#">Concerns</a></li>
-                    <li class="section"><a href="#">Pictures Presented</a></li>
-                </ul>
-            </nav>
-            
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><b>Meeting Minutes</b></title>
+    <link rel="icon" type="image/png" href="clock.png">
+</head>
+    
+<body>
+    <header>
+        <div class="section-title">Meeting Minutes: Project Meeting</div>
+        <div>Date:</div>
+        <input type="date" id="meeting-date">
+        <div>Time:</div>
+        <input type="text" id="meeting-time" placeholder="HH:MM AM/PM">
+        <div>Location:</div>
+        <input type="text" id="meeting-location" placeholder="Meeting Location">
+        <div>Attendees:</div>
+        <fieldset>
+            <input type="checkbox" id="first-person">
+            <label for="first-person">First Person</label><br>
+            <input type="checkbox" id="second-person">
+            <label for="second-person">Second Person</label>
+        </fieldset>
+        <div><strong>Absent:</strong></div>
+        <div class="main-container"></div>
+        <span>Extra information about the meeting.</span>
+        <nav class="sections">
+            <ul>
+                <li class="section"><a href="#agenda">Agenda</a></li>
+                <li class="section"><a href="#old-business">Old Business</a></li>
+                <li class="section"><a href="#new-business">New Business</a></li>
+                <li class="section"><a href="#concerns">Concerns</a></li>
+                <li class="section"><a href="#materials-presented">Materials Presented</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            
+    <main>
+        <section id="agenda">
             <h1>Agenda</h1>
+            <p>Outlines the topics to be discussed during the meeting, including introductions, project review, task allocation, and Q&A time.</p>
                 <ol>
                     <li><i>Introductions</i></li>
                     <li><i>Review of Project</i></li>
                     <li><i>Allocated New Tasks</i></li>
                     <li><em>Q&A Time</em></li>
                 </ol>
-            <hr />
+        </section>
+        <hr>
 
+        <body>
+            <div>Select Team Color</div>
+            <form>
+                <label for="color-select">Choose a color:</label>
+                <select id="color-select" name="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="orange">Orange</option>
+                    <option value="pink">Pink</option>
+                </select>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </body>
+        
+        <section id="old-business">
             <h1>Old Business</h1>
-            <section>
+            <p>Discuss progress made on previously assigned tasks and address any concerns or difficulties encountered.</p>
             <h2>Progress Reporting</h2>
             <p>
 
@@ -52,33 +79,64 @@
             <h3>Concerns</h3>
         
             <h4>Discuss Difficulties and Strateges</h4>
-            </section>
-            <hr />
+        </section>
+        <hr>
 
+        <section id="new-business">
             <h1>New Business</h1>
-            <hr />
-            <h1>Concerns bring up</h1>
+            <p>Work on new business, includng any new projects, or task allocation.</p>
+        </section>
+        <hr>
 
-            <br>
+        <section id="concerns">
+            <h1>Concerns Bring Up</h1>
+            <p>Free to raise any concerns, questions, or suggestions they may have regarding the project or meeting proceedings.</p>
+        </section>
+
+        <section id="Votes">
+            <div><i>Vote</i></div>
+            <div>
+                <datalist id="options">
+                    <option value="First">
+                    <option value="Second">
+                    <option value="Third">
+                </datalist>
+            </div>
+        </section>
+        
+        <hr>
+        <br>
+
+        <section id="materials-presented">
             <h1>Materials Presented</h1>
-            <section>  
+
             <h2>Pictures</h2>
-                
             <img src="path/to/image.jpg" alt="describes the image being shown for screen readers, or if the image can't be displayed"/>
             <h2>Audio</h2>
-            
+            <audio controls>
+                    <source src="path/to/audio.mp3" type="audio/mp3">
+            </audio>
             <h2>Video</h2>
-            </section> 
-            
-            <button></button>    
+            <video controls>
+                    <source src="path/to/video.mp4" type="video/mp4">
+            </video>
+        </section>
+        
+        <button>Submit</button>  
+        <form>
             <details>
                 <summary>Please Leave a Review</summary>
-                <label>Comments are anonymous:</label>
-                <textarea> </textarea>
+                <label for="comments">Comments are anonymous:</label><br>
+                <textarea id="comments" name="comments"></textarea><br>
+                <button type="submit">Submit Review</button>
             </details>
-        </main>
+        </form>
+    </main>
 
-        <footer></footer>
-    </body>
+    <footer>
+        <p>Digital Dream Team</p>
+        <p>Contact: 404</p>
+    </footer>
+</body>
+    
 </html>
-
