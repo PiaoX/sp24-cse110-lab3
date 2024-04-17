@@ -16,9 +16,9 @@
         
         <div>Attendees:</div>
             <input type="checkbox" id="first-person">
-            <label for="first-person">First Persoi</label><br>
+            <label for="first-person">First Person</label><br>
             <input type="checkbox" id="second-person">
-            <label for="second-person">Second Person</label>
+            <label for="second-person">Second Person</label><br>
             <input type="checkbox" id="third-person">
             <label for="second-person">Third Person</label>
         <div><strong>Absent: <input type="textarea" id="absent"> </strong></div>
@@ -36,9 +36,8 @@
         </nav>
 
         <body>
-            <div>Select Today's Color</div>
-            <form>
-                <label for="color-select">Choose a color:</label>
+            <span>
+                <div>Select Today's Color:</div>
                 <select id="color-select" name="color">
                     <option value="red">Red</option>
                     <option value="blue">Blue</option>
@@ -47,43 +46,43 @@
                     <option value="orange">Orange</option>
                     <option value="pink">Pink</option>
                 </select>
-                <br>
+            </span>
                 <button type="submit">Submit</button>
-            </form>
         </body>
         
     </header>
        <hr>
        <hr>
 
+    
     <main>
         <section id="agenda">
             <h1>Agenda</h1>
             <p>Outlines the topics to be discussed during the meeting.</p>
-            <fieldsest>
+            <fieldset>
                 <ol>
                     <li><i>Introductions</i></li>
                     <li><i>Review of Project</i></li>
                     <li><i>Allocated New Tasks</i></li>
                     <li><em>Q&A Time</em></li>
                 </ol>
-            </fieldsest>
+            </fieldset>
         </section>
         <hr>
         
         <section id="old-business">
             <h1>Old Business</h1>
             <p>Discuss progress made on previously assigned tasks and address any concerns or difficulties encountered.</p>
-            <h2>1.Progress Reporting</h2>
+            <i><h2>1.Progress Reporting</h2></i>
             <p>
                 
             </p>
                 <ol>
-                    <li><h3>Progress</h3></li>
+                    <i><li><h3>Progress</h3></li></i>
                     <ol>
-                        <li> <h3>Concerns</h3></li>
+                    <i><li> <h3>Concerns</h3></li></i>
                         <ol>
-                        <li> <h4>Discuss Difficulties and Strateges</h4> </li>
+                        <i><li> <h4>Discuss Difficulties and Strateges</h4> </li></i>
                         </ol> 
                     </ol> 
                 </ol>
@@ -92,13 +91,13 @@
 
         <section id="new-business">
             <h1>New Business</h1>
-            <p>Work on new business, includng any new projects, or task allocation.</p>
+            <p>Work on <stong>new business</stong>, includng any <b>new projects</b>, or <b>task allocation</b>.</p>
         </section>
         <hr>
 
         <section id="concerns">
             <h1>Concerns Bring Up</h1>
-            <p>Free to raise any concerns, questions, or suggestions they may have regarding the project or meeting proceedings.</p>
+            <p>Free to raise </strong><em>any</em></strong> concerns, questions, or suggestions they may have regarding the project or meeting proceedings.</p>
         </section>
 
         <section id="Votes">
@@ -120,12 +119,12 @@
             <li><h1>Materials Presented</h1></li>
 
             <li><h2><i>Pictures</i></h2></li>
-            <img src="path/to/image.jpg" alt="describes the image being shown for screen readers, or if the image can't be displayed"/>
+            <img src="clock.jpeg" />
             <li><h2><i>Audio</i></h2></li>
             <audio controls>
                     <source src="teamintro.mp3" type="audio/mp3">
             </audio>
-            <li><h2><i>Video</i></h2></li><h2>Video</h2>
+            <li><h2><i>Video</i></h2></li><h2></h2>
             <video controls>
                     <source src="teamintro.mp4" type="video/mp4">
             </video>
@@ -143,7 +142,9 @@
             </details>
         </form>
     </main>
-
+    
+    <hr>
+    <hr>
     <footer>
         <p>Digital Dream Team</p>
         <p>Contact: 404</p>
