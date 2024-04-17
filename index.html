@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><b>Meeting Minutes</b></title>
-    <link rel="icon" type="image/png" href="clock.png">
+    <title>Meeting Minutes</title>
+    <link rel="icon" type="image/png" href="clock.jpeg">
 </head>
     
 <body>
     <header>
-        <div class="section-title">Meeting Minutes: Project Meeting</div>
-        <div>Date:</div>
-        <input type="date" id="meeting-date">
-        <div>Time:</div>
-        <input type="text" id="meeting-time" placeholder="HH:MM AM/PM">
-        <div>Location:</div>
-        <input type="text" id="meeting-location" placeholder="Meeting Location">
+        <h1 class="section-title"><b>Meeting Minutes: Project Meeting</b></h1>
+        <div>Date: <input type="date" id="meeting-date"></div>
+        <div>Time: <input type="text" id="meeting-time" placeholder="HH:MM AM/PM"></div>
+        <div>Location: <input type="text" id="meeting-location" placeholder="Meeting Location"></div>
+        
         <div>Attendees:</div>
-        <fieldset>
             <input type="checkbox" id="first-person">
-            <label for="first-person">First Person</label><br>
+            <label for="first-person">First Persoi</label><br>
             <input type="checkbox" id="second-person">
             <label for="second-person">Second Person</label>
-        </fieldset>
-        <div><strong>Absent:</strong></div>
-        <div class="main-container"></div>
-        <span>Extra information about the meeting.</span>
+            <input type="checkbox" id="third-person">
+            <label for="second-person">Third Person</label>
+        <div><strong>Absent: <input type="textarea" id="absent"> </strong></div>
+        
+        <p>I know how to use <span class="highlight"></span><stong>span</stong></span> text.</p>
+        
         <nav class="sections">
             <ul>
                 <li class="section"><a href="#agenda">Agenda</a></li>
@@ -35,23 +34,9 @@
                 <li class="section"><a href="#materials-presented">Materials Presented</a></li>
             </ul>
         </nav>
-    </header>
-
-    <main>
-        <section id="agenda">
-            <h1>Agenda</h1>
-            <p>Outlines the topics to be discussed during the meeting, including introductions, project review, task allocation, and Q&A time.</p>
-                <ol>
-                    <li><i>Introductions</i></li>
-                    <li><i>Review of Project</i></li>
-                    <li><i>Allocated New Tasks</i></li>
-                    <li><em>Q&A Time</em></li>
-                </ol>
-        </section>
-        <hr>
 
         <body>
-            <div>Select Team Color</div>
+            <div>Select Today's Color</div>
             <form>
                 <label for="color-select">Choose a color:</label>
                 <select id="color-select" name="color">
@@ -67,18 +52,41 @@
             </form>
         </body>
         
+    </header>
+       <hr>
+       <hr>
+
+    <main>
+        <section id="agenda">
+            <h1>Agenda</h1>
+            <p>Outlines the topics to be discussed during the meeting.</p>
+            <fieldsest>
+                <ol>
+                    <li><i>Introductions</i></li>
+                    <li><i>Review of Project</i></li>
+                    <li><i>Allocated New Tasks</i></li>
+                    <li><em>Q&A Time</em></li>
+                </ol>
+            </fieldsest>
+        </section>
+        <hr>
+        
         <section id="old-business">
             <h1>Old Business</h1>
             <p>Discuss progress made on previously assigned tasks and address any concerns or difficulties encountered.</p>
-            <h2>Progress Reporting</h2>
+            <h2>1.Progress Reporting</h2>
             <p>
-
+                
             </p>
-            <h3>Progress</h3>
-
-            <h3>Concerns</h3>
-        
-            <h4>Discuss Difficulties and Strateges</h4>
+                <ol>
+                    <li><h3>Progress</h3></li>
+                    <ol>
+                        <li> <h3>Concerns</h3></li>
+                        <ol>
+                        <li> <h4>Discuss Difficulties and Strateges</h4> </li>
+                        </ol> 
+                    </ol> 
+                </ol>
         </section>
         <hr>
 
@@ -94,7 +102,7 @@
         </section>
 
         <section id="Votes">
-            <div><i>Vote</i></div>
+            <div><i>We Focusing on:</i></div>
             <div>
                 <datalist id="options">
                     <option value="First">
@@ -108,21 +116,24 @@
         <br>
 
         <section id="materials-presented">
-            <h1>Materials Presented</h1>
+            <ul>
+            <li><h1>Materials Presented</h1></li>
 
-            <h2>Pictures</h2>
+            <li><h2><i>Pictures</i></h2></li>
             <img src="path/to/image.jpg" alt="describes the image being shown for screen readers, or if the image can't be displayed"/>
-            <h2>Audio</h2>
+            <li><h2><i>Audio</i></h2></li>
             <audio controls>
-                    <source src="path/to/audio.mp3" type="audio/mp3">
+                    <source src="teamintro.mp3" type="audio/mp3">
             </audio>
-            <h2>Video</h2>
+            <li><h2><i>Video</i></h2></li><h2>Video</h2>
             <video controls>
-                    <source src="path/to/video.mp4" type="video/mp4">
+                    <source src="teamintro.mp4" type="video/mp4">
             </video>
+            </ul>
         </section>
+        <button>Submit</button> 
         
-        <button>Submit</button>  
+        <hr>
         <form>
             <details>
                 <summary>Please Leave a Review</summary>
