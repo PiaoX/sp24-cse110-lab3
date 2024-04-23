@@ -1,4 +1,4 @@
-# [CSE110 Lab 2](https://piaox.github.io/Lab2_Starter/)
+# [CSE110 Lab 3](https://piaox.github.io/sp24-cse110-lab3/)
 
-This is [link](https://piaox.github.io/Lab2_Starter/) to the site ⬆️.
+This is [link](https://piaox.github.io/sp24-cse110-lab3/) to the site ⬆️.
 
