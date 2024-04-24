@@ -21,7 +21,7 @@ select {
 }
 
 h1 {
-    color: color(space 1 0.5 0); 
+    color: color(RGB 1 0.5 0); 
 }
 
 p {
