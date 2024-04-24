@@ -21,11 +21,11 @@ select {
 }
 
 h1 {
-    color: color(display-p3 1 0.5 0); 
+    color: color(color space 1 0.5 0); 
 }
 
 p {
-    color: color-mix(in srgb, red 50%, white 50%);
+    color: color-mix(srgb, red 50%, white 50%);
 }
 
 /* CSS Variables & Fallbacks */
@@ -301,8 +301,6 @@ nav:has(ul) {
 }
 
 /* Nested Selectors */
-main {
-    h1 {
+main h1 {
         font-style: italic; 
-    }
 }
