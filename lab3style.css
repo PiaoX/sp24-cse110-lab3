@@ -21,11 +21,11 @@ select {
 }
 
 h1 {
-    color: color(color space 1 0.5 0); 
+    color: color(space 1 0.5 0); 
 }
 
 p {
-    color: color-mix(srgb, red 50%, white 50%);
+    color: color-mix(red 50%, white 50%);
 }
 
 /* CSS Variables & Fallbacks */
