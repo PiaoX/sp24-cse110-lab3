@@ -20,10 +20,6 @@ select {
     color:black;
 }
 
-p {
-    color: color-mix(srgb, color(red 50%), color(white 50%));
-}
-
 /* CSS Variables & Fallbacks */
 h1 {
     --main-color: rgb(45, 45, 175);
