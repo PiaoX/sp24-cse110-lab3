@@ -25,7 +25,7 @@ h1 {
 }
 
 p {
-    color: color-mix(red 50%, white 50%);
+    color: color-mix(srgb, color(red 50%), color(white 50%));
 }
 
 /* CSS Variables & Fallbacks */
